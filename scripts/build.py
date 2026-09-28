@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Generates the animated SVGs in assets/ and README.md from scripts/content.py.
+"""Generates the animated SVGs in assets/, README.md and the website
+(via build_site.py) from scripts/content.py.
 
 All text is converted to outlines with fontTools so the SVGs render identically
 everywhere (GitHub serves README images without web fonts or scripts), and all
@@ -848,3 +849,6 @@ if __name__ == "__main__":
     build_activity()
     build_footer()
     build_readme()
+
+    import build_site
+    build_site.build()

@@ -109,3 +109,79 @@ STACK = [
 ]
 
 GITHUB_USER = "hpgbao2204"
+
+
+# ------------------------------------------------------------- website only --
+# Used by scripts/build_site.py (the README ignores these).
+
+SITE_URL = "https://hpgbao2204.github.io/Hpgbao2204/"
+EMAIL = None  # e.g. "you@example.com" to show a mail button on the site
+
+# Profile paragraphs for the About section.
+PROFILE = [
+    "I am Huynh Phan Gia Bao, an undergraduate researcher in Information Security at the "
+    "University of Information Technology (UIT), Vietnam National University Ho Chi Minh City. "
+    "My work sits where cryptography meets distributed systems: I study how independent "
+    "blockchains can talk to each other without handing trust to a single bridge, relay or operator.",
+    "Most of my research tackles concrete weaknesses in cross-chain infrastructure, such as "
+    "linkability in hash time-locked contracts, fragile single-relay designs and credentials that "
+    "leak more than they prove. I build protocols that combine zero-knowledge proofs, "
+    "market-based relaying and formal verification, and I test them as working prototypes, "
+    "not only as proofs on paper.",
+    "Beyond interoperability, I work on decentralized identity and reputation: soulbound "
+    "credentials, reputation-weighted consensus for education networks, and trust models that "
+    "adapt to evidence over time. The goal behind all of it is simple to state and hard to reach: "
+    "systems that stay trustworthy even when nobody in them has to be trusted.",
+]
+
+# Rotating quotes: (text, author, source).
+QUOTES = [
+    ("The root problem with conventional currency is all the trust that's required to make it work.",
+     "Satoshi Nakamoto", "P2P Foundation, 2009"),
+    ("Privacy is necessary for an open society in the electronic age.",
+     "Eric Hughes", "A Cypherpunk's Manifesto, 1993"),
+    ("Whereas most technologies tend to automate workers on the periphery doing menial tasks, "
+     "blockchains automate away the center.",
+     "Vitalik Buterin", None),
+    ("Security is a process, not a product.",
+     "Bruce Schneier", None),
+    ("Don't trust. Verify.",
+     "Bitcoin community maxim", None),
+]
+
+# Research areas: (title, blurb, color).
+RESEARCH = [
+    ("Cross-Chain Interoperability",
+     "Trust-minimized bridges, multi-relay markets and atomic swaps that do not leak who traded with whom.",
+     "yellow"),
+    ("Zero-Knowledge Proofs",
+     "Privacy-preserving verification across consortium and public chains, from HTLCs to credentials.",
+     "blue"),
+    ("Smart Contract Security",
+     "Finding and formally ruling out the bugs that turn contracts into open vaults.",
+     "red"),
+    ("Decentralized Identity & Reputation",
+     "Soulbound credentials, evidence-driven trust dynamics and reputation-weighted consensus.",
+     "lime"),
+]
+
+ADVISOR = dict(
+    name="Tran Tuan Dung",
+    name_vi="Trần Tuấn Dũng",
+    title="M.Sc. · Lecturer",
+    unit="Faculty of Computer Networks and Communications · Information Security Lab",
+    org="University of Information Technology, VNU-HCM",
+    blurb=(
+        "My research advisor. Mr. Dung teaches information security at UIT and leads a group of "
+        "student researchers working on blockchain security, cross-chain interoperability, "
+        "AI security & privacy, IoT and distributed computing, and has mentored UIT students "
+        "presenting blockchain research at international venues such as CSoNet and ICISN."
+    ),
+    interests=["Blockchain Security", "Cross-Chain", "AI Security & Privacy", "IoT", "Distributed Computing"],
+    links=[
+        ("Google Scholar", "https://scholar.google.com/citations?user=zaJ7ZE4AAAAJ"),
+        ("UIT profile", "https://nc.uit.edu.vn/en/giang-vien/tran-tuan-dung"),
+    ],
+    # Matches the advisor in author lists, to count joint papers.
+    author_key="TD Tran",
+)
