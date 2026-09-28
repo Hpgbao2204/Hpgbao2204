@@ -175,7 +175,7 @@ ADVISOR = dict(
         "My research advisor. Mr. Dung teaches information security at UIT and leads a group of "
         "student researchers working on blockchain security, cross-chain interoperability, "
         "AI security & privacy, IoT and distributed computing, and has mentored UIT students "
-        "presenting blockchain research at international venues such as CSoNet and ICISN."
+        "presenting blockchain research at international venues such as ICISN 2024."
     ),
     interests=["Blockchain Security", "Cross-Chain", "AI Security & Privacy", "IoT", "Distributed Computing"],
     links=[
