@@ -136,7 +136,7 @@ function filters() {
     });
     if (anime && !reduced) {
       anime({
-        targets: shown, opacity: [0, 1], translateX: [-24, 0],
+        targets: shown, opacity: [0, 1], translateY: [16, 0],
         duration: 550, delay: anime.stagger(60), easing: "easeOutCubic",
       });
     }
