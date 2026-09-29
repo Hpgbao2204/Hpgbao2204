@@ -117,67 +117,59 @@ GITHUB_USER = "hpgbao2204"
 SITE_URL = "https://hpgbao2204.github.io/Hpgbao2204/"
 EMAIL = None  # e.g. "you@example.com" to show a mail button on the site
 
+PHOTO = "img/bao.jpg"  # relative to site/
+
 # Profile paragraphs for the About section.
 PROFILE = [
-    "I am Huynh Phan Gia Bao, an undergraduate researcher in Information Security at the "
-    "University of Information Technology (UIT), Vietnam National University Ho Chi Minh City. "
-    "My work sits where cryptography meets distributed systems: I study how independent "
-    "blockchains can talk to each other without handing trust to a single bridge, relay or operator.",
-    "Most of my research tackles concrete weaknesses in cross-chain infrastructure, such as "
-    "linkability in hash time-locked contracts, fragile single-relay designs and credentials that "
-    "leak more than they prove. I build protocols that combine zero-knowledge proofs, "
-    "market-based relaying and formal verification, and I test them as working prototypes, "
-    "not only as proofs on paper.",
-    "Beyond interoperability, I work on decentralized identity and reputation: soulbound "
-    "credentials, reputation-weighted consensus for education networks, and trust models that "
-    "adapt to evidence over time. The goal behind all of it is simple to state and hard to reach: "
-    "systems that stay trustworthy even when nobody in them has to be trusted.",
+    "I am Huynh Phan Gia Bao, an Information Security undergraduate researcher at the "
+    "University of Information Technology (UIT), VNU-HCM. I study how independent blockchains "
+    "can interoperate without handing trust to a single bridge, relay or operator.",
+    "My work combines zero-knowledge proofs, market-based relaying and formal verification to fix "
+    "concrete weaknesses in cross-chain systems, and extends to decentralized identity and "
+    "reputation: soulbound credentials, reputation-weighted consensus and evidence-driven trust.",
 ]
 
-# Rotating quotes: (text, author, source).
+# Rotating quotes: (text, author).
 QUOTES = [
     ("The root problem with conventional currency is all the trust that's required to make it work.",
-     "Satoshi Nakamoto", "P2P Foundation, 2009"),
+     "Satoshi Nakamoto"),
     ("Privacy is necessary for an open society in the electronic age.",
-     "Eric Hughes", "A Cypherpunk's Manifesto, 1993"),
-    ("Whereas most technologies tend to automate workers on the periphery doing menial tasks, "
-     "blockchains automate away the center.",
-     "Vitalik Buterin", None),
+     "Eric Hughes, A Cypherpunk's Manifesto"),
+    ("Blockchains automate away the center.",
+     "Vitalik Buterin"),
     ("Security is a process, not a product.",
-     "Bruce Schneier", None),
+     "Bruce Schneier"),
     ("Don't trust. Verify.",
-     "Bitcoin community maxim", None),
+     "Bitcoin maxim"),
 ]
 
 # Research areas: (title, blurb, color).
 RESEARCH = [
-    ("Cross-Chain Interoperability",
-     "Trust-minimized bridges, multi-relay markets and atomic swaps that do not leak who traded with whom.",
-     "yellow"),
-    ("Zero-Knowledge Proofs",
-     "Privacy-preserving verification across consortium and public chains, from HTLCs to credentials.",
-     "blue"),
-    ("Smart Contract Security",
-     "Finding and formally ruling out the bugs that turn contracts into open vaults.",
-     "red"),
-    ("Decentralized Identity & Reputation",
-     "Soulbound credentials, evidence-driven trust dynamics and reputation-weighted consensus.",
-     "lime"),
+    ("Cross-Chain Interoperability", "Trust-minimized bridges, multi-relay markets, unlinkable swaps.", "yellow"),
+    ("Zero-Knowledge Proofs", "Private verification across consortium and public chains.", "blue"),
+    ("Smart Contract Security", "Finding and formally ruling out exploitable bugs.", "red"),
+    ("Identity & Reputation", "Soulbound credentials and evidence-driven trust.", "lime"),
 ]
+
+LAB = dict(
+    name="Blockchainist Research Group",
+    url="https://blockchainist.id.vn/",
+    tagline="Advancing blockchain research for trustworthy digital systems.",
+    org="School of Computer Networks and Communications, UIT",
+)
 
 ADVISOR = dict(
     name="Tran Tuan Dung",
     name_vi="Trần Tuấn Dũng",
-    title="M.Sc. · Lecturer",
-    unit="Faculty of Computer Networks and Communications · Information Security Lab",
-    org="University of Information Technology, VNU-HCM",
+    photo="img/advisor.jpg",  # relative to site/
+    title="M.Sc. · Lecturer · PI of Blockchainist",
+    org="School of Computer Networks and Communications, UIT · VNU-HCM",
     blurb=(
-        "My research advisor. Mr. Dung teaches information security at UIT and leads a group of "
-        "student researchers working on blockchain security, cross-chain interoperability, "
-        "AI security & privacy, IoT and distributed computing, and has mentored UIT students "
-        "presenting blockchain research at international venues such as ICISN 2024."
+        "My research advisor. His research spans blockchain and smart contracts, network security, "
+        "IoT and edge computing with digital twins, and AI for security and privacy."
     ),
-    interests=["Blockchain Security", "Cross-Chain", "AI Security & Privacy", "IoT", "Distributed Computing"],
+    interests=["Blockchain & Smart Contracts", "Network Security", "IoT & Digital Twins", "AI Security & Privacy"],
+    email="dungtrt@uit.edu.vn",
     links=[
         ("Google Scholar", "https://scholar.google.com/citations?user=zaJ7ZE4AAAAJ"),
         ("UIT profile", "https://nc.uit.edu.vn/en/giang-vien/tran-tuan-dung"),
